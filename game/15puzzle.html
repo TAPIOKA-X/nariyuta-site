@@ -1,0 +1,16 @@
+<html>
+
+<head>
+<mate charset= "Shift_JIS">
+<title>シンプルゲーム -15パズル</title>
+</head>
+
+<body id=D onKeyDown=F(event.which-37) onLoad='A=[];g=f=0;for(i=16;i--;A.push(i))
+;s="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮　";F=(K)=>{if(!f&&0<=K&&K<4){a=A.indexOf(15);[
+M,N]=K%2?[--K?a<12:a>3,a+~-K*4]:[(a+!!K)%4,a+K-1];M&&([A[a],A[N]]=[A[N],15]);S=""
+;for(k=16;k--;S+=s[A[k]]+(k%4?"":"<br>"));if(g)for(f=1,r=16;--r;)f&=(A[r-1]>A[r])
+}D.innerHTML=S+(f?"Win":"")};for(j=999;j--;)F(4*Math.random()|0);g=1'>
+
+</boby>
+
+</html>
